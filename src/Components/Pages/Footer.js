@@ -1,17 +1,17 @@
-import "../CSS/Footer.css";
+import styles from "../CSS/Footer.module.css";
 const Footer = () => {
   return (
     <>
       <footer>
-        <div class="mini-footer">
-          <div class="footer">
-            <div class="columns">
+        <div className={styles.minifooter}>
+          <div className={styles.footer}>
+            <div className={styles.columns}>
               <h4>Our Products</h4>
-              <ul class="footer-list">
-                <li class="footer-last-list">
+              <ul>
+                <li className="footer-list">
                   <a href="#">Intelligent Enterprise</a>
                 </li>
-                <li>
+                <li >
                   <a href="#">Supply Chain Solutions</a>
                 </li>
                 <li>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="columns">
+            <div className={styles.columns}>
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -51,7 +51,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="columns">
+            <div className={styles.columns}>
               <h4>Azure Services</h4>
               <ul>
                 <li>
@@ -80,7 +80,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="columns">
+            <div className={styles.columns}>
               <h4>Data Science</h4>
               <ul>
                 <li>
@@ -100,9 +100,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="columns">
+            <div className={styles.columns}>
               <h4>Power Platform</h4>
-              <ul>
+              <ul >
                 <li>
                   <a href="#">Power BI</a>
                 </li>
@@ -117,7 +117,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="columns">
+            <div className={styles.columns}>
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -144,34 +144,26 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="footer">
-            <div class="end-columns">
+          <div className={styles.imagesfooter}>
+            <div className={styles.endcolumn}>
               <img src="https://celebaltech.com/assets/img/micro.webp" />
               <p>
                 Email us at:
                 <a
-                  class="footer-tag"
+                  className="footer-tag"
                   href="mailto:enterprisesales@celebaltech.com"
                 >
                   enterprisesales@celebaltech.com
                 </a>
               </p>
-              {/* <div class="social-links">
-                <a
-                  href="https://twitter.com/celebaltech?lang=en"
-                  class="circle"
-                >
-                  <i class="fa fa-twitter fa-2x"></i>
-                </a>
-              </div> */}
             </div>
-            <div class="mid-column"></div>
-            <div class="end-columns">
+            <div className={styles.midcolumn}></div>
+            <div className={styles.endcolumn}>
               <img src="https://celebaltech.com/assets/img/worldmap.png"></img>
-              <div class="end-column-text">INDIA | USA | UK | SINGAPORE</div>
+              <div className={styles.endcolumntext}>INDIA | USA | UK | SINGAPORE</div>
             </div>
           </div>
-          <div class="last-mid-line">
+          <div className={styles.lastmidline}>
             © 2021 Celebal Technologies | Terms & Conditions | Privacy Policies
           </div>
         </div>
